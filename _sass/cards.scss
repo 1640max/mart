@@ -1,0 +1,38 @@
+.cards {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 6rem 2rem;
+}
+
+.cards__self {
+  margin-top: 7rem;
+}
+
+.cards__item {
+  background: var(--white);
+  border-radius: var(--border-radius);
+	position: relative;
+  padding: 6rem .75rem 1.25rem;
+}
+
+.cards__img {
+  border-radius: var(--border-radius);
+	position: absolute;
+  top: -4rem;
+  width: 12rem;
+}
+
+.cards__heading {
+	color: var(--orange);
+  margin: 0 0 .75rem;
+}
+
+.cards__delimiter {
+	margin: 0 0 .75rem;
+  color: var(--blue);
+}
+
+.cards__text {
+	color: var(--black);
+  margin: 0;
+}
