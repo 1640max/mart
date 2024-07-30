@@ -1,0 +1,36 @@
+.header {
+  display: grid;
+}
+
+.header__self {
+  margin-top: 2rem;
+}
+
+.header__heading {
+	display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.header__tagline {
+	line-height: var(--small-line-height);
+}
+
+.header__img {
+	width: 100%;
+  border-radius: 1rem;
+}
+
+.header__bottom {
+	margin-top: 5rem;
+}
+
+.header__perk {
+	line-height: var(--small-line-height);
+  text-align: center;
+}
+
+.header__button {
+	
+}
+

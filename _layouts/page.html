@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html class="html" lang="ru-RU">
+<head>
+  {% comment %}
+  {%- if jekyll.environment == "production" %}
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KNPJ3HZ8');</script>
+    <!-- End Google Tag Manager -->
+  {%- endif %}
+  {% endcomment %}
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mART - театральная студия для детей</title>
+  <meta name="description" content="Учим актёрскому мастерству на метро Медведково и ВДНХ в Москве">
+  <meta name="keywords" content="спектакль, театр, студия, курсы, мастер-класс, тренинг">
+  <link rel="canonical" href="{{ site.url }}{% if page.url != '/' %}{{ page.url }}{% endif %}">
+  <meta name="language" content="Russian">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Максим Мальцев">
+  <meta name="yandex-verification" content="f7219a7b43b5bdbd">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <link rel="icon" href="{{ site.url }}/favicon.ico" type="image/x-icon">
+  <meta name="theme-color" content="#da681b">
+
+  <base href="{{ site.url }}/assets/">
+
+  {% comment %}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" type="text/javascript"></script>
+  {% endcomment %}
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css?{{ 'now' | date: '%s' }}">
+</head>
+<body class="body">
+  {% comment %}
+  {%- if jekyll.environment == "production" %}
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNPJ3HZ8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  {%- endif %}
+  {% endcomment %}
+  
+  {{ content }}
+
+  {% comment %}
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+  {% endcomment %}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

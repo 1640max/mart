@@ -1,1 +1,76 @@
-tes
+---
+layout: page
+---
+
+<header class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-brand brand" href="#">
+      <img src="logo.svg" alt="Логотип">
+      <p class="brand__name">Театр-студия<br>mART</p>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Открыть меню">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+
+  <header class="container header header__self">
+    <div class="header__heading">
+      <h1 class="h2">Детская театральная студия «mART»</h1>
+      <p class="header__tagline">на метро Медведково и ВДНХ</p>
+    </div>
+    <img class="header__img" src="header__img.jpg" alt="Ученики студии «Март»">
+    <div class="header__bottom">
+      <p class="header__perk">800 рублей за занятие,<br>а пробный урок — бесплатно</p>
+      <a class="button header__button" href="#">Записаться</a>
+    </div>
+  </header>
+  
+  <section class="container welcome">
+    <img class="welcome__img" src="welcome__img.jpg" alt="">
+    <div class="delimiter welcome__delimiter"></div>
+    <p class="welcome__text">
+      Меня зовут Анастасия Крюкова, я актриса и режиссёр.
+      Преподаю актёрское мастерство детям уже 8 лет, а в 2017 году открыла свою небольшую студию.
+    </p>
+  </section>
+  
+  <section class="container">
+    <h2 class="h2">Две самые главные вещи у нас:</h2>
+    <div class="things things__self">
+
+      {% include things__thing.html
+        img="things__learning.jpg"
+        h="1. Учёба"
+        text="Изучаем актёрское мастерство, готовим спектакли, играем их на фестивалях, ездим на гастроли."
+      %}
+
+      {% include things__thing.html
+        img="things__friendship.jpg"
+        h="2. Дружба"
+        text="В свободное время устраиваем посиделки с пиццей и мафией, едим торт на день рождения студии, ходим в театры.
+        Детям важно общаться не только во время занятий, тем более что здесь нас связывает общее увлечение."
+      %}
+      
+    </div>
+  </section>
+  
+</main>

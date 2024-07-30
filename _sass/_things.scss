@@ -1,0 +1,23 @@
+.things {
+	display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.things__self {
+  margin-top: 3rem;
+}
+
+.things__thing {
+	
+}
+
+.things__img {
+	width: 100%;
+  border-radius: var(--border-radius);
+  margin: 0 0 1.5rem;
+}
+
+.things__h {
+  margin: 0 0 .5rem;
+}

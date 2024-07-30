@@ -1,0 +1,58 @@
+---
+---
+
+@import 'fonts';
+@import 'headings';
+
+:root {
+  --orange: #da681b;
+  --white: #fff;
+  --blue: #000af9;
+  --light-blue: #2b32d6;
+  --black: #000;
+
+  --border-radius: 1rem;
+  --small-line-height: 100%;
+}
+
+.html {
+  font-size: 16px; // Опорное значение для всех размеров
+}
+
+.body {
+  font: 400 1.125rem/120% 'Open Sans', sans-serif; // 18px
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.button {
+	@extend .h3, .link-reset;
+  display: block;
+  text-align: center;
+  background-color: var(--light-blue);
+  padding: 1rem;
+  border-radius: 9999px;
+}
+
+.brand {
+  display: flex;
+  gap: .75rem;
+}
+
+.brand__name {
+
+}
+
+@import "header";
+@import "welcome";
+@import "main";
+@import "things";

@@ -14,6 +14,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 host: 192.168.0.141
 
+incremental: true
+
+sass:
+  sourcemap: never
+  #style: compressed
+
+theme: null
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
