@@ -1,0 +1,27 @@
+{% comment %}
+  Ахтунг, костыль.
+  Бутстраповский collapse требует указывать id: у блока, который сворачиваем, и у кнопки, которая сворачивание триггерит. У них в примерах id указан вручную. Я же генерю его из заголовка, чтобы хоть как-то автоматизировать этот процесс. Так я получаю уникальные айдишники для каждого вопроса.
+{% endcomment %}
+
+{%- capture id -%}
+  {{ include.heading | split: "" | reverse | join: "" | truncate: 20, "" | url_encode }}
+{%- endcapture -%}
+
+<div class="accordion-item">
+  <h3 class="h3 accordion-header">
+    <button
+      class="accordion-button collapsed"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#{{ id }}"
+      aria-expanded="false"
+      aria-controls="{{ id }}">
+      {{ include.heading }}
+    </button>
+  </h3>
+  <div id="{{ id }}" class="accordion-collapse collapse">
+    <div class="accordion-body">
+      {{ include.text }}
+    </div>
+  </div>
+</div>
