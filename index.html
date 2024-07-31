@@ -134,19 +134,23 @@ layout: page
 
   <section class="container">
     <h2 class="h1">Вопросы<br>и ответы</h2>
-    <div class="accordion">
+    <div class="accordion accordion__self">
+
       {% include accordion-item.html
         heading="Сколько человек в группе?"
         text="Не более 10, чтобы в течение урока уделить внимание каждому"
       %}
+
       {% include accordion-item.html
         heading="Сколько длится урок?"
         text="123"
       %}
+
       {% include accordion-item.html
         heading="Для какого это возраста?"
         text="Не более 10, чтобы в течение урока уделить внимание каждому"
       %}
+
       {% include accordion-item.html
         heading="А если мы присоединились не сначала?"
         text="123"
@@ -156,6 +160,7 @@ layout: page
         heading="Можно ли родителям присутствовать на занятии?"
         text="Не более 10, чтобы в течение урока уделить внимание каждому"
       %}
+
       {% include accordion-item.html
         heading="Нужна ли форма?"
         text="123"
@@ -165,6 +170,7 @@ layout: page
         heading="Будут ли дополнительные траты?"
         text="Не более 10, чтобы в течение урока уделить внимание каждому"
       %}
+
     </div>
   </section>
 

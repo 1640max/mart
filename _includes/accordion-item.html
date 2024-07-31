@@ -4,13 +4,13 @@
 {% endcomment %}
 
 {%- capture id -%}
-  {{ include.heading | split: "" | reverse | join: "" | truncate: 20, "" | url_encode }}
+  {{ include.heading | truncate: 30, "" | url_encode | remove: "%" }}
 {%- endcapture -%}
 
 <div class="accordion-item">
-  <h3 class="h3 accordion-header">
+  <h3 class="accordion-header">
     <button
-      class="accordion-button collapsed"
+      class="accordion-button collapsed h3"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#{{ id }}"
@@ -20,8 +20,9 @@
     </button>
   </h3>
   <div id="{{ id }}" class="accordion-collapse collapse">
-    <div class="accordion-body">
+    <p class="accordion-body">
       {{ include.text }}
-    </div>
+    </p>
   </div>
+  <hr class="delimiter accordion-item__delimiter">
 </div>

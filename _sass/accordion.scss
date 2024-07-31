@@ -1,0 +1,40 @@
+// Переоределение бутстраповского аккордеона
+
+// Обнуляем оформление
+.accordion {
+  --bs-accordion-bg: revert;
+  --bs-accordion-border-width: 0;
+  --bs-accordion-btn-color: unset;
+  --bs-accordion-color: unset;
+  //--bs-accordion-btn-icon: 
+  --bs-accordion-active-color: revert;
+  --bs-accordion-active-bg: revert;
+  --bs-accordion-btn-focus-box-shadow: 0;
+  --bs-accordion-btn-padding-x: 0;
+  --bs-accordion-btn-padding-y: 0;
+  --bs-accordion-body-padding-x: 0;
+  --bs-accordion-body-padding-y: 0;
+}
+
+.accordion__self {
+  margin: 1.5rem 0 0;
+}
+
+// Меняем местами иконку и заголовок
+.accordion-button {
+  gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.accordion-button::after {
+  margin: 0;
+}
+
+.accordion-body {
+  margin: .75rem 0 0;
+}
+
+.accordion-item__delimiter {
+  margin-block: 1.3rem;
+}
