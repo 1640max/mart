@@ -17,6 +17,7 @@
   background-color: var(--white);
   border-radius: var(--border-radius);
 
+  @include media-breakpoint-only(md) { max-width: 25rem; }
   @include media-breakpoint-up(lg) {
     max-width: 33rem;
 
@@ -30,8 +31,6 @@
 	width: 100%;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-
-  @include media-breakpoint-only(md) { max-width: 25rem; }
 }
 
 .things__text{
