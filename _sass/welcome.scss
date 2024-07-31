@@ -18,3 +18,39 @@
 	text-align: center;
 }
 
+@include media-breakpoint-up(sm) {
+  
+  .welcome__img {
+    width: 18rem;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .welcome__img {
+    width: 31rem;
+  }
+  
+  .welcome__delimiter {
+    display: revert;
+  }
+
+  .welcome__text {
+    font: 400 3rem/110% 'Roboto Flex', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+      'wdth' 130,
+      'GRAD' 0,
+      'slnt' 0,
+      'XTRA' 468,
+      'XOPQ' 96,
+      'YOPQ' 95,
+      'YTLC' 536,
+      'YTUC' 712,
+      'YTAS' 750,
+      'YTDE' -203,
+      'YTFI' 738;
+    margin: 0;
+  }
+}
