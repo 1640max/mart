@@ -16,7 +16,7 @@
     'YTAS' 750,
     'YTDE' -203,
     'YTFI' 738;
-    margin: 0;
+  margin: 0;
 }
 
 .h1,
@@ -28,4 +28,11 @@
 .h3 {
   @extend %heading;
   font-size: 1.75rem; // 28px
+}
+
+@include media-breakpoint-up(lg) {
+
+  .h1 { font-size: 7.5rem }
+  .h2 { font-size: 4rem }
+  .h3 { font-size: 2rem }
 }
