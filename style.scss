@@ -28,7 +28,7 @@
 .body {
   font: 400 1.125rem/120% 'Open Sans', sans-serif; // 18px
   background-color: var(--orange);
-  color: var(--white);
+  color: var(--black);
   margin: 0;
 
   @include media-breakpoint-up(lg) { font-size: 1.5rem; }
