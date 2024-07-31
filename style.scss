@@ -44,6 +44,13 @@
   border-radius: 9999px;
 }
 
+.delimiter {
+  border: .1rem solid white;
+  margin: 0;
+  width: 100%;
+  max-width: 27rem;
+}
+
 .brand {
   display: flex;
   gap: .75rem;
