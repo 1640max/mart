@@ -14,7 +14,7 @@
   display: none;
 }
 
-.welcome__text {
+.welcome__body {
 	text-align: center;
 }
 
@@ -36,7 +36,7 @@
     display: revert;
   }
 
-  .welcome__text {
+  .welcome__body {
     font: 400 3rem/110% 'Roboto Flex', sans-serif;
     font-optical-sizing: auto;
     font-variation-settings:
