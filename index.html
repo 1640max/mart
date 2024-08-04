@@ -1,0 +1,101 @@
+---
+layout: page
+---
+
+<main class="main">
+
+<header class="container header header__self">
+  <div class="header__heading">
+    <h1 class="h2" style="margin: 4rem 0 .8rem;">Детская театральная<br>студия «mART»</h1>
+    <p class="header__tagline"style="margin-bottom: 3rem;">на метро Медведково и ВДНХ</p>
+    <p style="margin-bottom: .2rem;">Сайт пока в разработке, но вот наши контакты:</p>
+    <p style="margin-bottom: .2rem;"><a href="https://wa.me/+79778006989" class="h3">Вотсап</a></p>
+    <p style="margin-bottom: 1rem;"><a href="https://t.me/KryNast" class="h3" style="margin-bottom: 1rem;">Телеграм</a></p>
+    <p style="margin-bottom: .2rem;">И телефон:</p>
+    <p class="h3">+7 (977) 800-69-89</p>
+  </div>
+</header>
+
+  
+  <div class="container welcome">
+    <img class="welcome__img" src="AnastasiyaKrukova.jpg" alt="">
+    <hr class="delimiter welcome__delimiter">
+    <p class="welcome__body">
+      Меня зовут Анастасия Крюкова, я актриса и режиссёр.
+      Преподаю актёрское мастерство детям уже 8 лет, а в 2017 году открыла свою небольшую студию.
+    </p>
+  </div>
+  
+  <section class="container">
+    <h2 class="h1">Две самые главные<br>вещи у нас:</h2>
+    <div class="things things__self">
+
+      {% include things__item.html
+        img="things__learning.jpg"
+        heading="1. Учёба"
+        body="Изучаем актёрское мастерство, готовим спектакли, играем их на фестивалях, ездим на гастроли."
+      %}
+
+      {% include things__item.html
+        img="things__friendship.jpg"
+        heading="2. Дружба"
+        body="В свободное время устраиваем посиделки с пиццей и мафией, едим торт на день рождения студии, ходим в театры.
+        Детям важно общаться не только во время занятий, тем более что здесь нас связывает общее увлечение."
+      %}
+      
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="h1">Чем мы<br>занимаемся</h2>
+    <div class="cards cards__self">
+
+      {% include cards__item.html
+        img="occupation-1.jpg"
+        heading="Участвуем в конкурсах"
+        body="В 2023 году наши ученики успели выиграть на театральных конкурсах «Трубадур», «Арт-взлет», «Яркие МЫ», «Звучащая лира», «Театральная смена»."
+      %}
+
+      {% include cards__item.html
+        img="occupation-2.jpg"
+        heading="Проводим открытые уроки и отчётные концерты"
+        body="Практика на зрителе очень важна: именно так недели репетиций превращаются в настоящие навыки."
+      %}
+
+      {% include cards__item.html
+        img="occupation-3.jpg"
+        heading="Ездим на гастроли и фестивали"
+        body="Уже побывали в Смоленске, Сочи, выступали на сцене театра Рюминой, театра Российской армии и множестве сцен поменьше."
+      %}
+
+      {% include cards__item.html
+        img="occupation-4.jpg"
+        heading="И просто получаем удовольствие"
+        body="Например, на фестивале «Белая дверь» в Сочи, купались в бассейне в ноябре-месяце, объедались на шведском столе, ну и конечно же играли спектакли в Зимнем театре."
+      %}
+
+    </div>
+  </section>
+
+  <div class="gum">
+    <div class="container facts">
+      
+      {% include facts__item.html
+        heading="Ведём четкий план обучения по каждому"
+        body="Я слежу, чтобы у всех была роль и у всех было равное количество выступлений. После каждого выступления даю индивидуальную обратную связь по каждому ребенку."
+      %}
+      
+      {% include facts__item.html
+        heading="Учим не мыслить категориями «плохой — хороший»"
+        body="Мы намеренно уходим от шоу и переигрывания в угоду зрителю. Дети учатся изучать источник любых эмоций, анализировать поведение персонажей, не мыслить плоскими категориями «плохой/хороший», а видеть 3d картинку в характере любого человека."
+      %}
+
+      {% include facts__item.html
+        heading="У нас нет второстепенных ролей"
+        body="Лучше поставить несколько мини-сказок, где у каждого будет значимая роль, а не спектакль на двоих и с массовкой. Ребенок может и не стать актером, но как приятно будет вспомнить, что в детстве ты играл не просто снежинку, а целую роль со словами!"
+      %}
+
+    </div>
+  </div>
+
+</main>

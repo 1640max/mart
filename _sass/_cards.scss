@@ -1,0 +1,54 @@
+.cards {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 6rem 2rem;
+
+  @include media-breakpoint-only(md) { max-width: 34rem; }
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cards_teacher {
+  row-gap: 8rem;
+}
+
+.cards__self {
+  margin-top: 7rem;
+}
+
+.cards__self-teacher {
+  margin-top: 8rem;
+}
+
+.cards__item {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: 0 .75rem 1.25rem;
+}
+
+.cards__img {
+  border-radius: var(--border-radius);
+	height: 9rem;
+  margin: -4.5rem 0 1rem;
+}
+
+.cards__img_teacher {
+  border-radius: 9999px;
+  height: 12rem;
+  margin: -6rem 0 1rem;
+}
+
+.cards__heading {
+	color: var(--orange);
+  margin: 0 0 .75rem;
+}
+
+.cards__delimiter {
+	margin: 0 0 .75rem;
+  border-color: var(--blue);
+}
+
+.cards__body {
+  margin: 0;
+}

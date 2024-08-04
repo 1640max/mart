@@ -1,0 +1,79 @@
+---
+---
+
+@import 'bootstrap-custom';
+@import 'fonts';
+@import 'headings';
+
+:root {
+  --orange: #da681b;
+  --white: #fff;
+  --blue: #000af9;
+  --light-blue: #2b32d6;
+  --black: #000;
+
+  --border-radius: 1rem;
+  --small-line-height: 100%;
+}
+
+.html {
+  // Опорное значение для всех размеров
+  font-size: 16px;
+  @include media-breakpoint-only(lg) { font-size: 12px; }
+  @include media-breakpoint-only(xl) { font-size: 14px; }
+  //@include media-breakpoint-only(xxxl) { font-size: 21px; }
+
+}
+
+.body {
+  font: 400 1.125rem/120% 'Open Sans', sans-serif; // 18px
+  background-color: var(--orange);
+  color: var(--black);
+  margin: 0;
+
+  @include media-breakpoint-up(lg) { font-size: 1.5rem; }
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.margin-reset {
+  margin: 0;
+}
+
+.button {
+	@extend .h3, .link-reset;
+  display: block;
+  text-align: center;
+  background-color: var(--light-blue);
+  padding: 1rem;
+  border-radius: 9999px;
+}
+
+.delimiter {
+  border: .1rem solid white;
+  margin: 0;
+  width: 100%;
+  max-width: 27rem;
+  opacity: 1;
+}
+
+.brand {
+  display: flex;
+  gap: .75rem;
+}
+
+.brand__name {
+
+}
+
+@import "header";
+@import "welcome";
+@import "main";
+@import "things";
+@import "cards";
+@import "accordion";
+@import "gum";
+@import "facts";
