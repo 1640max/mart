@@ -1,0 +1,21 @@
+.apply__p {
+  margin: 0;
+  max-width: 31rem;
+}
+
+.apply__link {
+  color: var(--orange);
+}
+
+@include media-breakpoint-up(lg) {
+
+  .apply {
+    display: flex;
+    justify-content: center;
+  }  
+
+  .apply__p {
+    max-width: unset;
+  }
+
+}
