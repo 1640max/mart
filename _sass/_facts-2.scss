@@ -1,0 +1,17 @@
+.facts-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.facts-2__item {
+  max-width: 40rem;
+}
+
+.facts-2__heading {
+  margin-bottom: .75rem;
+}
+
+.facts-2__body {
+	color: var(--white);
+}
