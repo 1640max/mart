@@ -10,8 +10,7 @@
 @include media-breakpoint-up(lg) {
 
   .apply {
-    display: flex;
-    justify-content: center;
+    padding-left: 20rem;
   }  
 
   .apply__p {

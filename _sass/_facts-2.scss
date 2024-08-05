@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-left: 20rem;
+  }
+
 }
 
 .facts-2__item {
