@@ -1,0 +1,7 @@
+.top-arrow {
+  @extend .link-reset;
+  display: grid;
+	gap: 1rem;
+  justify-items: center;
+  text-align: center;
+}
