@@ -1,0 +1,24 @@
+.gallery {
+  display: grid;
+  grid-auto-flow: column;
+  gap: .75rem;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+
+  @media (pointer: fine) {
+    scroll-snap-type: unset;
+  }
+}
+
+.gallery__self {
+  margin-top: 1.5rem;
+}
+
+.gallery__photo {
+  border-radius: var(--border-radius);
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  max-width: min(87vw, 25rem);
+
+  max-height: 80vh;
+}
