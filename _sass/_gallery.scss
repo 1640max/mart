@@ -2,6 +2,7 @@
   display: grid;
   grid-auto-flow: column;
   gap: .75rem;
+  @include media-breakpoint-up(lg) { gap: 1.75rem }
   cursor: grab;
   scroll-snap-type: x mandatory;
 
