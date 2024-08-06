@@ -1,0 +1,57 @@
+// Накидал сюда переопределения бутстраповских классов,
+// лень разбираться, что там к чему
+
+.navbar-brand {
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  color: var(--white);
+}
+
+.navbar-brand-name {
+  @extend %heading;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 120%;
+}
+
+.navbar-toggler {
+  border: 0;
+  padding: 0;;
+}
+
+.navbar-toggler:focus {
+  box-shadow: unset;
+}
+
+.navbar-toggler-icon {
+  background-image: url(assets/hamburger.svg);
+  width: 3rem;
+}
+
+.navbar-collapse {
+  justify-content: flex-end; // Выравнивание для десктопа
+}
+
+.navbar-nav {
+  align-items: center; // Выравнивание для мобильных
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  @extend .link-reset, %heading;
+  color: var(--white); 
+}
+
+.navbar-delimiter-top {
+  margin-block: 2rem 2.5rem;
+  max-width: unset;
+  @include media-breakpoint-up(lg) { display: none }
+}
+
+.navbar-delimiter-bottom {
+  margin-block: 2.5rem 1rem;
+  max-width: unset;
+  @include media-breakpoint-up(lg) { display: none }
+}

@@ -60,16 +60,8 @@
   opacity: 1;
 }
 
-.brand {
-  display: flex;
-  gap: .75rem;
-}
-
-.brand__name {
-
-}
-
 @import "header";
+@import "nav";
 @import "welcome";
 @import "main";
 @import "things";

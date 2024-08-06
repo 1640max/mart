@@ -2,30 +2,43 @@
 layout: page
 ---
 
+<!-- Этот блок так же прекрасен, как балконы, пристроенные к пятиэтажкам
+     в Дагестане (нет). Только тут к бутстрапу пристроены мои штуки -->
 <header class="navbar navbar-expand-lg" id="top">
-  <div class="container-fluid">
-    <div class="navbar-brand brand" href="#">
+  <div class="container">
+    <div class="navbar-brand" href="#">
       <img src="logo.svg" alt="Логотип">
-      <p class="brand__name">Театр-студия<br>mART</p>
+      <p class="navbar-brand-name">Театр-студия<br>mART</p>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Открыть меню">
       <span class="navbar-toggler-icon"></span>
     </button>
     <nav class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Disabled</a>
-        </li>
+      <hr class="delimiter navbar-delimiter-top">
+      <ul class="navbar-nav" role="list">
+
+        {% include nav-item.html
+          id = "gallery"
+          body = "Фото"
+        %}
+
+        {% include nav-item.html
+          id = "reviews"
+          body = "Отзывы"
+        %}
+
+        {% include nav-item.html
+          id = "teachers"
+          body = "Преподаватели"
+        %}
+
+        {% include nav-item.html
+          id = "faq"
+          body = "Вопросы и ответы"
+        %}
+        
       </ul>
+      <hr class="delimiter navbar-delimiter-bottom">
     </nav>
   </div>
 </header>
@@ -104,7 +117,7 @@ layout: page
     </div>
   </section>
 
-  <section>
+  <section id="gallery">
     <div class="container">
       <h2 class="h1">Фото</h2>
     </div>
@@ -120,7 +133,7 @@ layout: page
       </div>
   </section>
 
-  <section>
+  <section id="reviews">
     <div class="container">
       <h2 class="h1">Отзывы</h2>
     </div>
@@ -170,7 +183,7 @@ layout: page
     </div>
   </div>
 
-  <section class="container">
+  <section class="container" id="teachers">
     <h2 class="h1">Наши<br>педагоги</h2>
     <div class="cards cards_teacher cards__self-teacher">
 
@@ -214,7 +227,7 @@ layout: page
 
   </div>
 
-  <section class="container">
+  <section class="container" id="faq">
     <h2 class="h1">Вопросы<br>и ответы</h2>
     <div class="accordion accordion__self">
 
