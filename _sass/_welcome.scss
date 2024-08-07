@@ -17,20 +17,13 @@
 
 .welcome__body {
 	text-align: center;
-}
-
-@include media-breakpoint-up(sm) {
-  
-  .welcome__img {
-    width: 18rem;
-  }
-
+  @include media-breakpoint-down(lg) { max-width: 31rem }
 }
 
 @include media-breakpoint-up(lg) {
 
   .welcome__img {
-    width: 31rem;
+    width: 18rem;
   }
   
   .welcome__delimiter {
