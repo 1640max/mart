@@ -1,4 +1,39 @@
 .gum {
   background-color: var(--white);
-  padding-block: 3rem;
+  padding-block: 2rem;
+  position: relative;
+
+  --slope-height: 3rem;
+  --slope-position: calc(-1 * var(--slope-height) + 2px);
+
+  @include media-breakpoint-up(lg) {
+    padding-block: 5rem;
+    --slope-height: 5rem;
+  }
+}
+
+%slope {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  // Не забудь дописать preserveAspectRatio="none" в svg
+  background-image: url(/assets/slope.svg);
+  background-size: 100% 100%;
+  height: var(--slope-height);
+}
+
+.gum::before {
+  @extend %slope;
+  top: var(--slope-position);
+}
+
+.gum::after {
+  @extend %slope;
+  bottom: var(--slope-position);
+  transform: scale(-1);
+}
+
+.gum_flat-bottom::after {
+  display: none;
 }
