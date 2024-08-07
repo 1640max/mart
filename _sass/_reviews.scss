@@ -1,19 +1,26 @@
 .reviews {
   display: grid;
-  gap: .75rem;
-  @include media-breakpoint-up(lg) { gap: 1.75rem }
   grid-auto-flow: column;
   grid-template-columns: unquote("min(87vw, 30rem)");
   grid-auto-columns: unquote("min(90vw, 30rem)");
+  gap: .75rem;
+  @include media-breakpoint-up(lg) { gap: 1.75rem }
   align-items: start;
   justify-content: start; // Иногда отзывы отображаются уже прокрученные
-
   overflow: auto;
   cursor: grab;
   scroll-snap-type: x mandatory;
 
   @media (pointer: fine) {
     scroll-snap-type: unset;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-auto-flow: initial;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    // Побеждаем значение, которое ставит скрипт drag-to-scroll.js
+    cursor: initial !important;
   }
 }
 

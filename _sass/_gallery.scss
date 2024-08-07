@@ -9,6 +9,14 @@
   @media (pointer: fine) {
     scroll-snap-type: unset;
   }
+
+  @include media-breakpoint-up(lg) {
+    grid-auto-flow: initial;
+    grid-template-columns: repeat(auto-fit, minmax(25.5rem, 1fr));
+
+    // Побеждаем значение, которое ставит скрипт drag-to-scroll.js
+    cursor: initial !important;
+  }
 }
 
 .gallery__self {
@@ -20,6 +28,10 @@
   scroll-snap-align: center;
   scroll-snap-stop: always;
   max-width: min(87vw, 25rem);
-
   max-height: 80vh;
+
+  @include media-breakpoint-up(lg) {
+    max-width: revert;
+    width: 100%;
+  }
 }
