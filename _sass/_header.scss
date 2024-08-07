@@ -1,13 +1,27 @@
 .header {
   display: grid;
+  grid-template-areas: 
+    "heading"
+    "img"
+    "bottom";
   color: var(--white);
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    grid-template-areas: 
+      "heading img"
+      "bottom img";
+  }
 }
 
 .header__self {
   margin-top: 2rem;
+  @include media-breakpoint-up(lg) { margin-top: 4rem }
 }
 
 .header__heading {
+  grid-area: heading;
 	display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -18,20 +32,28 @@
 }
 
 .header__img {
+  grid-area: img;
 	width: 100%;
   border-radius: 1rem;
+
+  @include media-breakpoint-only(md) {
+    width: 29rem;
+    justify-self: center;
+  }
 }
 
 .header__bottom {
+  grid-area: bottom;
 	margin-top: 5rem;
 }
 
 .header__perk {
 	line-height: var(--small-line-height);
   text-align: center;
+  @include media-breakpoint-up(lg) { text-align: unset }
 }
 
 .header__button {
-	
+	@include media-breakpoint-up(lg) { width: 29rem }
 }
 
