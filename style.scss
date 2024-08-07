@@ -21,7 +21,7 @@
   font-size: 16px;
   @include media-breakpoint-only(lg) { font-size: 12px; }
   @include media-breakpoint-only(xl) { font-size: 14px; }
-  //@include media-breakpoint-only(xxxl) { font-size: 21px; }
+  @include media-breakpoint-only(xxxl) { font-size: 20px; }
 
 }
 

@@ -9,6 +9,21 @@
 @import "../assets/bootstrap/scss/functions";
 @import "../assets/bootstrap/scss/variables";
 //@import "../assets/bootstrap/scss/variables-dark";
+
+
+
+$custom-grid-breakpoints: (
+  xxxl: 1920px
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+
+$custom-container-max-widths: (
+  xxxl: 1680px
+);
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+
+
+
 @import "../assets/bootstrap/scss/maps";
 @import "../assets/bootstrap/scss/mixins";
 //@import "../assets/bootstrap/scss/utilities";
