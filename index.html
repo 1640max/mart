@@ -26,16 +26,6 @@ layout: page
           id = "reviews"
           body = "Отзывы"
         %}
-
-        {% include nav-item.html
-          id = "teachers"
-          body = "Преподаватели"
-        %}
-
-        {% include nav-item.html
-          id = "faq"
-          body = "Вопросы и ответы"
-        %}
         
       </ul>
       <hr class="delimiter navbar-delimiter-bottom">
@@ -133,6 +123,27 @@ layout: page
       </div>
   </section>
 
+  <div class="gum">
+    <div class="container facts">
+      
+      {% include facts__item.html
+        heading = "Ведём четкий план обучения по каждому"
+        body = "Я слежу, чтобы у всех была роль и у всех было равное количество выступлений. После каждого выступления даю индивидуальную обратную связь по каждому ребенку."
+      %}
+      
+      {% include facts__item.html
+        heading = "Учим не мыслить категориями «плохой — хороший»"
+        body = "Мы намеренно уходим от шоу и переигрывания в угоду зрителю. Дети учатся изучать источник любых эмоций, анализировать поведение персонажей, не мыслить плоскими категориями «плохой — хороший», а видеть 3D-картинку в характере любого человека."
+      %}
+
+      {% include facts__item.html
+        heading = "У нас нет второстепенных ролей"
+        body = "Лучше поставить несколько мини-сказок, где у каждого будет значимая роль, а не спектакль на двоих и с массовкой. Ребенок может и не стать актёром, но как приятно будет вспомнить, что в детстве ты играл не просто снежинку, а целую роль со словами!"
+      %}
+
+    </div>
+  </div>
+
   <section id="reviews">
     <div class="container">
       <h2 class="h1">Отзывы</h2>
@@ -162,56 +173,7 @@ layout: page
     </div>
   </section>
 
-  <div class="gum">
-    <div class="container facts">
-      
-      {% include facts__item.html
-        heading = "Ведём четкий план обучения по каждому"
-        body = "Я слежу, чтобы у всех была роль и у всех было равное количество выступлений. После каждого выступления даю индивидуальную обратную связь по каждому ребенку."
-      %}
-      
-      {% include facts__item.html
-        heading = "Учим не мыслить категориями «плохой — хороший»"
-        body = "Мы намеренно уходим от шоу и переигрывания в угоду зрителю. Дети учатся изучать источник любых эмоций, анализировать поведение персонажей, не мыслить плоскими категориями «плохой — хороший», а видеть 3D-картинку в характере любого человека."
-      %}
-
-      {% include facts__item.html
-        heading = "У нас нет второстепенных ролей"
-        body = "Лучше поставить несколько мини-сказок, где у каждого будет значимая роль, а не спектакль на двоих и с массовкой. Ребенок может и не стать актёром, но как приятно будет вспомнить, что в детстве ты играл не просто снежинку, а целую роль со словами!"
-      %}
-
-    </div>
-  </div>
-
-  <section class="container" id="teachers">
-    <h2 class="h1">Наши<br>педагоги</h2>
-    <div class="cards cards_teacher cards__self-teacher">
-
-      {% include cards__item_teacher.html
-        img = "AnastasiyaKrukova.jpg"
-        img-shape="round"
-        heading = "Анастасия Крюкова"
-        body = "Здесь можно описать, почему ты крутая и тебе можно доверять своих детей: образование, опыт, регалии, наличие фотки с Безруковым (шутка. Не надо про фотку с Безруковым)."
-      %}
-
-      {% include cards__item_teacher.html
-        img = "AnastasiyaKrukova.jpg"
-        img-shape="round"
-        heading = "Анастасия Крюкова"
-        body = "Здесь можно описать, почему ты крутая и тебе можно доверять своих детей: образование, опыт, регалии, наличие фотки с Безруковым (шутка. Не надо про фотку с Безруковым)."
-      %}
-
-      {% include cards__item_teacher.html
-        img = "AnastasiyaKrukova.jpg"
-        img-shape="round"
-        heading = "Анастасия Крюкова"
-        body = "Здесь можно описать, почему ты крутая и тебе можно доверять своих детей: образование, опыт, регалии, наличие фотки с Безруковым (шутка. Не надо про фотку с Безруковым)."
-      %}
-
-    </div>
-  </section>
-
-  <div id="apply"></div>
+  <div id="apply" style="margin-top: -8rem;"></div>
   {% include apply.html %}
 
   <div class="container facts-2">
@@ -227,50 +189,6 @@ layout: page
     %}
 
   </div>
-
-  <section class="container" id="faq">
-    <h2 class="h1">Вопросы<br>и ответы</h2>
-    <div class="accordion accordion__self">
-
-      {% include accordion-item.html
-        heading = "Сколько человек в группе?"
-        body = "Не более 10, чтобы в течение урока уделить внимание каждому"
-      %}
-
-      {% include accordion-item.html
-        heading = "Сколько длится урок?"
-        body = "123"
-      %}
-
-      {% include accordion-item.html
-        heading = "Для какого это возраста?"
-        body = "Не более 10, чтобы в течение урока уделить внимание каждому"
-      %}
-
-      {% include accordion-item.html
-        heading = "А если мы присоединились не сначала?"
-        body = "123"
-      %}
-    
-      {% include accordion-item.html
-        heading = "Можно ли родителям присутствовать на занятии?"
-        body = "Не более 10, чтобы в течение урока уделить внимание каждому"
-      %}
-
-      {% include accordion-item.html
-        heading = "Нужна ли форма?"
-        body = "123"
-      %}
-    
-      {% include accordion-item.html
-        heading = "Будут ли дополнительные траты?"
-        body = "Не более 10, чтобы в течение урока уделить внимание каждому"
-      %}
-
-    </div>
-  </section>
-
-  {% include apply.html %}
 
   <a class="container top-arrow" href="/#top">
     <img src="top-arrow__img.svg" alt="">
