@@ -2,8 +2,7 @@
 ---
 
 @import 'bootstrap-custom';
-@import 'fonts';
-@import 'headings';
+@import 'typography';
 
 :root {
   --orange: #da681b;
@@ -25,21 +24,8 @@
 }
 
 .body {
-  font: 400 1rem/120% 'Open Sans', sans-serif; // 18px
   background-color: var(--orange);
-  color: var(--black);
   margin: 0;
-
-  @include media-breakpoint-up(lg) { font-size: 1.25rem; }
-}
-
-.inverted-text {
-  color: var(--white);
-}
-
-.link-reset {
-  color: inherit;
-  text-decoration: inherit;
 }
 
 .margin-reset {

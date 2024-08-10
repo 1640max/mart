@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-10..0,25..151,100..1000,-200..150,27..175,323..603,25..135,649..854,-305..-98,560..788,416..570,528..760&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+
+
+// Заголовки
+
+%heading {
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 100%;
+  font-variation-settings:
+    'wdth' 130,
+    'GRAD' 0,
+    'slnt' 0,
+    'XTRA' 468,
+    'XOPQ' 96,
+    'YOPQ' 95,
+    'YTLC' 536,
+    'YTUC' 712,
+    'YTAS' 750,
+    'YTDE' -203,
+    'YTFI' 738;
+  margin: 0;
+  color: var(--white);
+}
+
+.h1,
+.h2 {
+  @extend %heading;
+  font-size: 2.5rem; // 40px
+}
+
+.h3 {
+  @extend %heading;
+  font-size: 1.5rem; // 28px
+}
+
+@include media-breakpoint-up(lg) {
+
+  .h1 { font-size: 6rem }
+  .h2 { font-size: 4rem }
+  .h3 { font-size: 2rem }
+}
+
+
+// Основной текст
+
+.body {
+  font: 400 1rem/120% 'Open Sans', sans-serif; // 18px
+  color: var(--black);
+
+  @include media-breakpoint-up(lg) { font-size: 1.25rem; }
+}
+
+.inverted-text {
+  color: var(--white);
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: inherit;
+}
