@@ -24,7 +24,12 @@
   grid-area: heading;
 	display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: .6rem;
+  margin-bottom: 1.5rem;
+}
+
+.header__tagline {
+  margin: 0;
 }
 
 .header__img {
@@ -49,6 +54,10 @@
 }
 
 .header__button {
-	@include media-breakpoint-up(lg) { width: 29rem }
+  
+	@include media-breakpoint-up(lg) {
+    width: 29rem;
+    margin-left: -.2rem;
+  }
 }
 
