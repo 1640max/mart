@@ -34,6 +34,10 @@
   transform: scale(-1);
 }
 
+.gum_flat-bottom {
+  padding: 1.5rem 0;
+}
+
 .gum_flat-bottom::after {
   display: none;
 }
