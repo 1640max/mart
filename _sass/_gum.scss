@@ -34,6 +34,29 @@
   transform: scale(-1);
 }
 
-.gum_flat-bottom::after {
+
+
+.gum__nav {
+  --slope-height: 1rem;
+  padding-block: .5rem;
+
+  @include media-breakpoint-up(lg) {
+    --slope-height: 2rem;
+    padding-block: 0;
+  }
+
+  .navbar-brand-name,
+  .nav-link {
+    color: var(--orange);
+  }
+}
+
+.gum__nav::before {
+  display: none;
+}
+
+
+
+.gum__footer::after {
   display: none;
 }
