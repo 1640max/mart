@@ -28,12 +28,12 @@
 
 .h3 {
   @extend %heading;
-  font-size: 1.75rem; // 28px
+  font-size: 1.5rem; // 28px
 }
 
 @include media-breakpoint-up(lg) {
 
-  .h1 { font-size: 7.5rem }
+  .h1 { font-size: 6rem }
   .h2 { font-size: 4rem }
   .h3 { font-size: 2rem }
 }

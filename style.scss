@@ -13,7 +13,6 @@
   --black: #000;
 
   --border-radius: 1rem;
-  --small-line-height: 100%;
 }
 
 .html {
@@ -26,12 +25,12 @@
 }
 
 .body {
-  font: 400 1.125rem/120% 'Open Sans', sans-serif; // 18px
+  font: 400 1rem/120% 'Open Sans', sans-serif; // 18px
   background-color: var(--orange);
   color: var(--black);
   margin: 0;
 
-  @include media-breakpoint-up(lg) { font-size: 1.5rem; }
+  @include media-breakpoint-up(lg) { font-size: 1.25rem; }
 }
 
 .inverted-text {

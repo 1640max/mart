@@ -27,10 +27,6 @@
   gap: .5rem;
 }
 
-.header__tagline {
-	line-height: var(--small-line-height);
-}
-
 .header__img {
   grid-area: img;
 	width: 100%;
@@ -48,7 +44,6 @@
 }
 
 .header__perk {
-	line-height: var(--small-line-height);
   text-align: center;
   @include media-breakpoint-up(lg) { text-align: unset }
 }
