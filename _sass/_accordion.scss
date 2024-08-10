@@ -20,6 +20,10 @@
   margin: 1.5rem 0 0;
 }
 
+.accordion-header {
+  margin: 1.3rem 0;
+}
+
 // Меняем местами иконку и заголовок
 .accordion-button {
   gap: 1rem;
@@ -32,10 +36,9 @@
 }
 
 .accordion-body {
-  margin: .75rem 0 0;
+  margin: 0 0 1.5rem;
 }
 
 .accordion-item__delimiter {
-  margin-block: 1.3rem;
   max-width: unset;
 }
