@@ -1,10 +1,10 @@
 .header {
+  @extend .inverted-text;
   display: grid;
   grid-template-areas: 
     "heading"
     "img"
     "bottom";
-  color: var(--white);
 
   @include media-breakpoint-up(lg) {
     grid-template-columns: 1fr 1fr;

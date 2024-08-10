@@ -34,6 +34,10 @@
   @include media-breakpoint-up(lg) { font-size: 1.5rem; }
 }
 
+.inverted-text {
+  color: var(--white);
+}
+
 .link-reset {
   color: inherit;
   text-decoration: inherit;

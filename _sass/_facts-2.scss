@@ -18,5 +18,5 @@
 }
 
 .facts-2__body {
-	color: var(--white);
+	@extend .inverted-text;
 }
