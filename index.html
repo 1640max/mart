@@ -23,6 +23,11 @@ layout: page
         %}
 
         {% include nav-item.html
+          id = "prices"
+          body = "Цены"
+        %}
+
+        {% include nav-item.html
           id = "reviews"
           body = "Отзывы"
         %}
@@ -30,11 +35,6 @@ layout: page
         {% include nav-item.html
           id = "teachers"
           body = "Преподаватели"
-        %}
-
-        {% include nav-item.html
-          id = "prices"
-          body = "Цены"
         %}
 
         {% include nav-item.html
@@ -222,7 +222,7 @@ layout: page
   </section>
 
   <section class="container" id="price">
-    <h2 class="h1">Цены и расписание</h2>
+    <h2 class="h1">Цены<br>и расписание</h2>
     <div class="cards prices prices__self">
       <section class="cards__item">
         <h3 class="h3 cards__heading">Группа 7–9 лет</h3>
@@ -283,10 +283,12 @@ layout: page
         body = "Есть три группы: 5–8 лет, 9–15 лет и 16+.<br>Группы делятся не столько по возрасту, сколько по опыту. Если ребенок занимается долго и ему скучно в младшей группе, смело переводим в старшую. А опытных ребят из старшей группы подключаем в более серьезные проекты с профессиональными артистами."
       %}
 
+      {% comment %}
       {% include accordion-item.html
         heading = "Какое расписание занятий?"
         body = "Занятия проходят дважды в неделю. Посещать можно оба либо только одно. Пропущенное занятие можно заменить занятием онлайн."
       %}
+      {% endcomment %}
 
       {% include accordion-item.html
         heading = "А если мы присоединились не сначала?"
