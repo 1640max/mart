@@ -1,0 +1,18 @@
+.prices {
+	display: grid;
+  gap: 1rem 2rem;
+}
+
+.prices__self {
+	margin-top: 2rem;
+}
+
+.prices__list {
+	margin: 0;
+}
+
+.prices__text {
+  color: white;
+  margin: 2rem 0 0;
+  max-width: 35rem;
+}

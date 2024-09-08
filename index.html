@@ -33,6 +33,11 @@ layout: page
         %}
 
         {% include nav-item.html
+          id = "prices"
+          body = "Цены"
+        %}
+
+        {% include nav-item.html
           id = "faq"
           body = "Вопросы и ответы"
         %}
@@ -57,7 +62,7 @@ layout: page
     </div>
     <img class="header__img" src="header__img.jpg" alt="Ученики студии «Март»">
     <div class="header__bottom">
-      <p class="header__perk">800 рублей за занятие,<br>а пробный урок — бесплатно</p>
+      <p class="header__perk">От 450 рублей за занятие,<br>а пробный урок — бесплатно</p>
       <a class="button header__button" href="/#apply">Записаться</a>
     </div>
   </header>
@@ -214,6 +219,42 @@ layout: page
       %}
 
     </div>
+  </section>
+
+  <section class="container" id="price">
+    <h2 class="h1">Цены и расписание</h2>
+    <div class="cards prices prices__self">
+      <section class="cards__item">
+        <h3 class="h3 cards__heading">Группа 7–9 лет</h3>
+        <hr class="delimiter cards__delimiter">
+        <div class="cards__body">
+          <p style="margin: 0 0 .3rem 0"><strong>3600 ₽</strong> за 8 занятий.<br>
+            Занятия проходят 2 раза в неделю:</p>
+          <ul class="prices__list">
+            <li>Пн 15:00–16:00</li>
+            <li>Ср 15:00–16:00</li>
+          </ul>
+        </div>
+      </section>
+      <section class="cards__item">
+        <h3 class="h3 cards__heading">Группа 10–16 лет</h3>
+        <hr class="delimiter cards__delimiter">
+        <div class="cards__body">
+          <p style="margin: 0 0 .5rem 0"><strong>6000 ₽</strong> за 8 занятий. Занятия проходят 2 раза в неделю.</p>
+          Первая подгруппа:
+          <ul class="prices__list" style="margin-bottom: .5rem">
+            <li>Пн 16:00-17:00</li>
+            <li>Ср 16:00-18:00</li>
+          </ul>
+          Вторая подгруппа:
+          <ul class="prices__list">
+            <li>Пн 17:15-18:30</li>
+            <li>Ср 17-00-18:30</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <p class="prices__text">Если вам не подходит время, всё равно свяжитесь с нами: мы набираем новые подгруппы и подстраиваем расписание под учеников.</p>
   </section>
 
   <div id="apply"></div>
