@@ -31,11 +31,13 @@ layout: page
           id = "reviews"
           body = "Отзывы"
         %}
-
+        
+        {% comment %}
         {% include nav-item.html
           id = "teachers"
           body = "Преподаватели"
         %}
+        {% endcomment %}
 
         {% include nav-item.html
           id = "faq"
@@ -193,6 +195,7 @@ layout: page
     </div>
   </div>
 
+  {% comment %}
   <section class="container" id="teachers">
     <h2 class="h1">Наши<br>педагоги</h2>
     <div class="cards cards_teacher cards__self-teacher">
@@ -220,6 +223,7 @@ layout: page
 
     </div>
   </section>
+  {% endcomment %}
 
   <section class="container" id="prices">
     <h2 class="h1">Цены<br>и расписание</h2>
