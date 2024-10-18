@@ -1,12 +1,11 @@
 // Переоределение бутстраповского аккордеона
 
-// Обнуляем оформление
 .accordion {
+  // Обнуляем оформление
   --bs-accordion-bg: revert;
   --bs-accordion-border-width: 0;
   --bs-accordion-btn-color: unset;
   --bs-accordion-color: unset;
-  //--bs-accordion-btn-icon: 
   --bs-accordion-active-color: revert;
   --bs-accordion-active-bg: revert;
   --bs-accordion-btn-focus-box-shadow: 0;
@@ -14,6 +13,10 @@
   --bs-accordion-btn-padding-y: 0;
   --bs-accordion-body-padding-x: 0;
   --bs-accordion-body-padding-y: 0;
+
+  // Ставим свои иконки
+  --bs-accordion-btn-icon: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMiA1TDggMTFMMTQgNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0ic3F1YXJlIi8+PC9zdmc+);
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 .accordion__self {
