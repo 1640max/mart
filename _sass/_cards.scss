@@ -41,12 +41,14 @@
 
 .cards__heading {
 	color: var(--orange);
-  margin: 0 0 .75rem;
+  margin: 0 0 .5rem;
 }
 
 .cards__delimiter {
 	margin: 0 0 .75rem;
-  border-color: var(--blue);
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22799%22%20height%3D%228%22%20viewBox%3D%220%200%20799%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M3.49358%201.48418L798.7%200.65918L794.176%207.25918L0.100098%205.27918L3.49358%201.48418Z%22%20fill%3D%22%23000AF9%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+  height: .5rem;
+  background-size: 100% 100%;
 }
 
 .cards__body {
